@@ -1,0 +1,159 @@
+:root{
+    --clr-primary-100: hsl(225, 100%, 94%);
+    --clr-primary: hsl(245, 75%, 52%);
+
+    --clr-neutral-100: hsl(225, 100%, 98%);
+    --clr-neutral-200: hsl(224, 23%, 55%);
+    --clr-neutral-300: hsl(223, 47%, 23%);
+
+    --ff-active: 'Red Hat Display';
+
+    --fw-regular: 500;
+    --fw-semi-regular: 700;
+    --fw-bold: 900; 
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{  margin: 0;
+    padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+body{
+    background-color: var(--clr-primary-100);
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-900);
+    font-family: var(--ff-active);
+
+
+    /*display: grid;
+    place-content: center;*/
+    display: grid;
+    place-content: center;
+}
+
+.showcase{
+    background: var(--clr-neutral-100);
+    margin: 3rem 1.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    max-width: 400px;
+}
+
+.summary{
+    text-align: center;
+    padding-top: 2rem;
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-300);
+}
+
+.caption{
+    text-align: center;
+    padding: 1rem 3rem;
+    color: var(--clr-neutral-200);
+    font-weight: var(--fw-regular);
+}
+
+.price{
+    color: var(--clr-neutral-200);
+}
+
+.plan__wrap{
+    background: hsl(240, 2%, 92%);
+    margin: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.plan__base{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.tune{
+    width: 70%;
+}
+
+.link a{
+    color: var(--clr-primary);
+}
+
+.click{
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+}
+
+.annual{
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-300);
+}
+
+button{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: #fff;
+    background: var(--clr-primary);
+    padding: .7rem;
+    border: 2px var(--clr-primary) solid;
+    border-radius: .5rem;
+    box-shadow: 0px 10px 25px var(--clr-neutral-200);
+}
+
+.click a{
+    text-decoration: none;
+    color: var(--clr-neutral-200);
+    padding-bottom: 1rem;
+    font-size: 14px;
+    font-weight: var(--fw-bold);
+}
+button:hover{
+    background: var(--clr-neutral-200);
+}
+.link a:hover{
+    color: var(--clr-neutral-200);
+}
+.click a:hover{
+    color: var(--clr-neutral-300);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
